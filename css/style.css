@@ -1,0 +1,664 @@
+@import './fonts.css';
+*{
+    outline: none;
+}
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.headerbg{
+    background: url(../img/Layer6.png);
+    height: 159px;
+}
+.container{
+    max-width: 1004px;
+    margin: 0 auto;
+    width: 100%;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.logo-text p{
+    margin: 0;
+    padding-left: 30px;
+}
+.logo-text p:first-child{
+    margin-top: -25px;
+    font-size: 28px;
+    font-family: "AdobeFangsongStd";
+    color: rgb(255, 255, 255);
+    line-height: 0.75;
+}
+.logo-text p:last-child{
+    font-size: 16px;
+    font-family: "Microsoft New Tai Lue";
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+    padding-top: 5px;
+}
+.header-call{
+    font-size: 24px;
+    font-family: "ACaslonPro";
+    color: rgb(255, 255, 255);
+    line-height: 1.417;
+    padding-right: 25px;
+    padding-top: 74px;
+}
+.header-call p{
+    margin: 0;
+}
+.header-menu{
+    display: flex;
+   /* background: url(../img/navback.png)  top / cover no-repeat;*/
+    justify-content: space-between;
+}
+.nav-menu{
+    list-style-type: none;
+    display: flex;
+}
+.nav-menu li{
+    margin-left: 0px;
+}
+.nav-menu li:first-child{
+    margin: 0;
+}
+.menu-sign{
+    display: flex;
+    list-style-type: none;
+    margin-right: 52px;
+}
+.menu-sign li:last-child{
+    border-left: 1px solid grey;
+}
+.nav-link{
+    font-size: 16px;
+    font-family: "MS Sans Serif";
+    color: rgb(58, 83, 98);
+    line-height: 1.313;
+    text-decoration: none;
+    padding: 13.5px 30px;;
+}
+.nav-link:hover{
+    color: #ffffff;
+    background: url(../img/navhoverback.png) top / cover no-repeat;
+}
+.sign-link{
+    font-size: 16px;
+    font-family: "MS Sans Serif";
+    color: rgb(58, 83, 98);
+    line-height: 1.313;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.sign-link:hover{
+    color: #ffffff;
+}
+/*--------------------------------------------------block 2--------------------------------------------------*/
+section.two{
+    background:url(../img/secondblockback.png) top / cover no-repeat;
+}
+.page-two{
+    display: flex;
+}
+.page-two__left{
+    max-width: 557px;
+    margin-top: 18px;
+}
+/*----------slider*-----------*/ 
+
+.slider{
+    padding: 15px 28px;
+}
+.slick-track{
+    display: flex;
+} 
+.slick-list{
+    overflow: hidden;
+}
+.slider__item{
+    border: 10px solid white;
+}
+.slider__item img{
+    max-width: 481px;
+}
+.slider-text p{
+    margin: 0;
+    padding: 0 15px;
+    background: #1a425a;
+}
+.slider-text p:first-child{
+    font-size: 20px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.7;
+}
+.slider-text p:last-child{
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 2.429;
+}
+.slider .slick-dots{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0 5px;
+}
+.slider .slick-dots li.slick-active button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 10px;
+    height: 14px;
+}
+.slider .slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 11px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: none;
+}
+/*-------------------------------------------- slider end---------------------------------------------*/
+.page-two__right{
+    margin-top: 25px;
+}
+.tenants-owners{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.tenants-owners li{
+    margin-right: 8px;
+}
+.tenant{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "ArialRoundedMTBold";
+    color: rgb(255, 255, 255);
+    line-height: 0.955;
+    background: url(../img/tenantsback.png)  top / cover no-repeat;
+    padding: 5px 30px;
+}
+.owner{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "ArialRoundedMTBold";
+    color: rgb(75, 131, 166);
+    line-height: 0.955;
+    background:url(../img/ownersback.png) top / cover no-repeat;
+    padding: 5px 30px;
+}
+.filtr{
+    max-width: 420px;
+    max-height: 324px;
+    background: url(../img/progback.png) top / cover no-repeat;
+    margin-top: 6px;
+    position: absolute;
+}
+.filter-top__text{
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+    margin-left: 34px;
+}
+.filter-top__text p{
+    margin-top: 15;
+}
+/*----------------------------search bar-----------------------------------------*/
+form {
+    position: relative;
+    width: 344px;
+    height: 50px;
+    background: url(../img/searchbarback.png) top / cover no-repeat;
+    border: none;
+    margin-left: 34px;
+    margin-right: 36px;
+    margin-bottom: 8px;
+}
+input, button {
+    font-size: 17px;
+    font-family: "MS Sans Serif";
+    color: rgb(52, 112, 149);
+    line-height: 1.235;
+    margin-top: 15px;
+}
+input[type="search"] {
+    outline: 0; 
+    width: 100%;
+    background: var(--color-light);
+    padding: 0 1.6rem;
+    border: none;
+    appearance: none;
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+}
+.sbar {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--btn-width);
+    font-weight: bold;
+    background: var(--color-brand);
+    border-radius: 0 var(--rad) var(--rad) 0;
+}
+input:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+    + button {
+      display: block;
+    }
+}
+.poisk {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+/*---------------------------------search bar end----------------------------*/ 
+.galochka {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+    margin-left: 50px;
+}
+.galochka input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border: 0.5px solid #fcfdfd;
+    border-radius:2px
+}
+.galochka:hover input ~ .checkmark {
+    background-color: #e4e4e4;
+}
+  
+.galochka input:checked ~ .checkmark {
+    background-color: #e4e4e4;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.galochka input:checked ~ .checkmark:after {
+    display: block;
+}
+.galochka .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 7px;
+    height: 10px;
+    border: solid #3a88ba;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.selproperty{
+    margin-top: 20px;
+    margin-left: 52px;
+}
+.selproperty-text{
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+}
+.property{
+    background: linear-gradient(to bottom, #ffffff, #fafafa);
+    width: 204px;
+    height: 32px;
+    border-radius:4px;
+    color: rgb(52, 112, 149);
+    margin-left: 15px;
+}
+.property option{
+    font-size: 14px;
+    font-family: "LucidaSans";
+    color: rgb(52, 112, 149);
+    line-height: 1.2;
+}  
+.selbedroom{
+    margin-top: 20px;
+    margin-left: 88px;
+}
+.selbedroom-text{
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+} 
+.bedroom{
+    background: linear-gradient(to bottom, #ffffff, #fafafa);
+    width: 204px;
+    height: 32px;
+    border-radius:4px;
+    color: rgb(52, 112, 149);
+    margin-left: 15px;
+}
+.bedroom option{
+    font-size: 14px;
+    font-family: "LucidaSans";
+    color: rgb(52, 112, 149);
+    line-height: 1.2;
+} 
+.search-filter{
+    font-size: 22px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 0.955;
+    background: linear-gradient(to bottom, #6ab2dc, #4a8bb3);
+    width: 203px;
+    height: 39px;
+    border: 2px solid #d5d6d7;
+    border-radius: 4px;
+    margin-top: 32px;
+    margin-left: 180px;
+    cursor: pointer;
+}
+/*--------------------------------------------------------------------page 3--------------------------------------------*/
+.three{
+    background: url(../img/threeback.png) top / cover no-repeat;
+}
+.page-three{
+    display: flex;
+    justify-content: space-around;
+}
+.buyahome{
+    margin-top: 14px;
+    max-width: 288px;
+}
+.rentahome{
+    margin-top: 14px;
+    max-width: 288px;
+}
+.sellahome{
+    margin-top: 14px;
+    max-width: 288px;
+}
+.img-tittle{
+    display: flex;
+    height: 32px;
+    align-items: baseline;
+}
+.img-tittle p{
+    font-size: 22px;
+    font-family: "Arial";
+    color: rgb(68, 132, 173);
+    line-height: 0.955;
+    margin-left: 9px;
+}
+/*--------------------------------------------------------------------page 4-----------------------------------------------*/
+.pictures{
+    flex-wrap: wrap;
+    display: flex;
+}
+.bayonne-img-text{
+    padding: 10px 10px;
+}
+.bayonne-img-text img{
+    margin-bottom: -4px;
+    transition: 1s; 
+}
+.bayonne-img-text img:hover{
+    transform: scale(1.8);
+}
+.bayonne-text{
+    max-width: 222px;
+    max-height: 56px;
+    background: #4f8fb7;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius:2px;
+    border-bottom-right-radius:2px;
+}
+.bayonne-text img{
+    width: 33px;
+    height: 27px;
+    padding-right: 8px;
+}
+.bayonne-text p{
+    font-size: 18px;
+    font-family: "MS Sans Serif";
+    color: rgb(255, 255, 255);
+    line-height: 1.167;
+    padding-left: 8px;
+}
+/*----------------------------------------------------------------------page 4 end----------------------------------------------*/
+.five{
+    background:url(../img/fiveback.png) top / cover no-repeat;
+    position: relative;
+    height: 196px;
+}
+.five-left-right{
+    display: flex;
+}
+.login-box{
+    display: flex; 
+}
+.member-login{
+    width: 472px;
+    height: 110px;
+    border: 2px solid #d7d7d7;
+    margin-top: 12px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #82badf, #689bbc);
+}
+.member-login p{
+    font-size: 24px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 0.875;
+    margin: 14px 0 0 25px;
+    
+}
+.member-inp{
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(75, 125, 155);
+    line-height: 1.313;
+    width: 150px;
+    height: 32px;
+    border:none;
+    border-radius: 4px;
+    background: #ffffff;
+    margin: 0 0 0 25px;
+    padding-left: 10px;
+}
+.member-inpt{
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(75, 125, 155);
+    line-height: 1.313;
+    width: 150px;
+    height: 32px;
+    border:none;
+    border-radius: 4px;
+    background: #ffffff;
+    margin: 0 0 0 17px;
+    padding-left: 10px;
+}
+.btn-login{
+    width: 95px;
+    height: 35px;
+    background: url(../img/btnloginback.png) top / cover no-repeat;
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+    border: none;
+    margin-left: 13px;
+    cursor: pointer;
+}
+.notamember{
+    display: flex;
+    align-items: baseline;
+    margin-left: 5px;
+}
+.notamember-text{
+    background: url(../img/notamemberback.png) top /cover no-repeat;
+}
+.notamember p{
+    font-size: 22px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 0.955;
+    margin: 13px 71px;
+}
+.signupnow{
+    font-size: 22px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 0.955;
+    border: none;
+    background: url(../img/signupnow.png) top /cover no-repeat;
+    cursor: pointer;
+    padding: 13px 29px;
+    margin-left: -21px;
+}
+
+.subscribe{
+    width: 472px;
+    height: 110px;
+    border: 2px solid #d7d7d7;
+    margin-top: 12px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #82badf, #689bbc);
+}
+.subscribe p{
+    font-size: 20px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.05;
+    margin: 14px 0 0 25px;
+}
+.btn-subs{
+    width: 95px;
+    height: 35px;
+    background: url(../img/btnloginback.png) top / cover no-repeat;
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+    border: none;
+    margin-left: 13px;
+    cursor: pointer;
+}
+.subs-inp{
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(75, 125, 155);
+    line-height: 1.313;
+    width: 309px;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    background: #ffffff;
+    margin: 0 0 0 25px;
+    padding-left: 10px;
+}
+.smedia-links{
+    margin: 13px 0 0 20px;
+}
+/*--------------------------------------------------------- footer-----------------------------------------------------------------*/
+footer{
+    background: url(../img/footerback.png) top / cover no-repeat;
+}
+.footer-main{
+    display: flex;
+}
+.footer-left{
+    display: flex;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about p{
+    margin: 0;
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 2.063;
+    padding: 10px 38px;
+}
+.about-links:hover{
+    color:aqua;
+}
+.about-links{
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.692;
+    padding-left: 38px;
+}
+.proparties{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.proparties p{
+    margin: 0;
+    font-size: 16px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 2.063;
+    padding: 10px 38px;
+}
+.footer-right{
+    position: absolute;
+    right: 27%;
+}
+.footer-right img{
+    margin-top: 20px;
+}
+.footer-right p{
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.692;
+    
+}

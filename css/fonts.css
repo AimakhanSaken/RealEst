@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'ACaslonPro';
+    src: url('../fonts/ACaslonPro-Regular.ttf');
+}
+@font-face {
+    font-family: 'Microsoft New Tai Lue';
+    src: url('../fonts/ntailu_0.ttf');
+}
+@font-face {
+    font-family: 'ArialRoundedMTBold';
+    src: url('../fonts/arialroundedmtbold.ttf');
+}
+@font-face {
+    font-family: 'LucidaSans';
+    src: url('../fonts/lucidasansunicode.ttf');
+}
+@font-face {
+    font-family: 'MS Sans Serif';
+    src: url('../fonts/MicrosoftSansSerif.ttf');
+}
+
